@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&family=Sora:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-sans: "Sora", "Outfit", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-neon-blue: #00D9FF;
+  --color-deep-blue: #0066FF;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #000000;
+  }
+}
+
+@layer utilities {
+  .glow-cyan {
+    box-shadow: 0 0 20px -5px rgba(0, 217, 255, 0.4);
+  }
+  .glow-cyan-strong {
+    box-shadow: 0 0 30px rgba(0, 217, 255, 0.5);
+  }
+  .text-glow {
+    text-shadow: 0 0 10px rgba(0, 217, 255, 0.5);
+  }
+  .glass {
+    @apply bg-white/[0.03] backdrop-blur-xl border border-white/[0.08];
+  }
+  .image-brand {
+    @apply grayscale-[0.3] contrast-[1.1] brightness-[0.7];
+    filter: sepia(0.2) hue-rotate(180deg) saturate(1.2);
+  }
+}
+
+.prose {
+  @apply max-w-none;
+}
+/* ... additional styles ... */
+
+.prose h2 {
+  @apply text-white text-2xl md:text-3xl font-bold mt-12 mb-6;
+}
+
+.prose h3 {
+  @apply text-white text-xl md:text-2xl font-bold mt-8 mb-4;
+}
+
+.prose p {
+  @apply text-gray-400 leading-relaxed mb-6;
+}
+
+.prose ul {
+  @apply list-disc list-inside space-y-2 mb-6 text-gray-400;
+}

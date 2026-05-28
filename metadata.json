@@ -1,0 +1,6 @@
+{
+  "name": "LeandroTV+ Premium - Streaming Elite",
+  "description": "Plataforma premium LeandroTV+. Streaming de alta performance, tecnologia SEO e entretenimento digital elite.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
