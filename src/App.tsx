@@ -7,7 +7,6 @@ import Home from './pages/Home';
 import Blog from './pages/Blog';
 import Article from './pages/Article';
 import HowItWorks from './pages/HowItWorks';
-import Download from './pages/Download';
 import FAQPage from './pages/FAQPage';
 import Contact from './pages/Contact';
 import TesteGratis from './pages/TesteGratis';
@@ -41,7 +40,6 @@ export default function App() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<Article />} />
             <Route path="/como-funciona" element={<HowItWorks />} />
-            <Route path="/downloads" element={<Download />} />
             <Route path="/faq" element={<FAQPage />} />
             <Route path="/contato" element={<Contact />} />
             <Route path="/teste-gratis" element={<TesteGratis />} />

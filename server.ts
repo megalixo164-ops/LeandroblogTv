@@ -19,7 +19,7 @@ Sitemap: ${process.env.APP_URL || "http://localhost:3000"}/sitemap.xml`);
     res.type("application/xml");
     const baseUrl = process.env.APP_URL || "http://localhost:3000";
     const pages = [
-      "", "/blog", "/como-funciona", "/downloads", "/faq", "/contato", "/teste-gratis",
+      "", "/blog", "/como-funciona", "/faq", "/contato", "/teste-gratis",
       "/melhor-iptv", "/iptv-smart-tv", "/futebol-online", "/iptv-samsung", "/android-tv", "/iptv-tv-box", "/aplicativo-iptv",
       "/blog/melhor-aplicativo-iptv-smart-tv-2026",
       "/blog/configurar-iptv-smart-tv-samsung-passo-a-passo",

@@ -33,7 +33,6 @@ export default function Footer() {
               {[
                 { name: 'Início', href: '/' },
                 { name: 'Como Funciona', href: '/como-funciona' },
-                { name: 'Downloads', href: '/downloads' },
                 { name: 'Teste Grátis', href: '/teste-gratis' },
               ].map((item) => (
                 <li key={item.name}>

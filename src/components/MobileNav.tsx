@@ -1,11 +1,10 @@
 import { motion, useScroll, useSpring } from 'motion/react';
-import { Home, Tv, Download, HelpCircle, MessageCircle } from 'lucide-react';
+import { Home, Tv, HelpCircle, MessageCircle } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 
 const navItems = [
   { icon: Home, label: 'Início', path: '/' },
   { icon: Tv, label: 'Portal', path: '/blog' },
-  { icon: Download, label: 'Apps', path: '/downloads' },
   { icon: HelpCircle, label: 'FAQ', path: '/faq' },
   { icon: MessageCircle, label: 'Teste', path: '/teste-gratis', highlight: true },
 ];

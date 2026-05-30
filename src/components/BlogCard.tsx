@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 interface BlogCardProps {
   post: BlogPost;
   index: number;
+  key?: any;
 }
 
 export default function BlogCard({ post, index }: BlogCardProps) {

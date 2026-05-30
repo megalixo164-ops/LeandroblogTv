@@ -1,5 +1,5 @@
 import SEO from '../components/SEO';
-import { Mail, Phone, MapPin, MessageSquare, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, MessageSquare, Send, ShieldCheck } from 'lucide-react';
 import { motion } from 'motion/react';
 
 export default function Contact() {

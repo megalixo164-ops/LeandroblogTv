@@ -11,12 +11,12 @@ export default function Home() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "StreamFlow Premium",
-    "url": window.location.origin,
+    "name": "LeandroTV+ Premium",
+    "url": typeof window !== "undefined" ? window.location.origin : "https://leandrotvplus.com",
     "description": "Streaming premium para Smart TV, TV Box e Celular. Estabilidade e alta definição.",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": `${window.location.origin}/search?q={search_term_string}`,
+      "target": typeof window !== "undefined" ? `${window.location.origin}/search?q={search_term_string}` : "https://leandrotvplus.com/search?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   };
